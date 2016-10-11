@@ -3,5 +3,8 @@
 git add $0
 git commit -m $1
 unset SSH_ASKPASS
-git push origin master
-
+if [ "$?"="0" ];then
+	git push origin +master
+else
+	git push origin master
+fi
