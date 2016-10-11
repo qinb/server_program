@@ -2,6 +2,6 @@
 
 git add $0
 git commit -m $1
-SSH_ACKPASS
+unset SSH_ASKPASS
 git push origin master
 
